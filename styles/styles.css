@@ -1,0 +1,65 @@
+header, nav, main, footer { display: block; } /*sets those html elements as a block*/
+
+body { 
+	background-color: #41264F;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*ID Styles*/
+#wrapper { 
+	width: 80%;
+	margin: auto;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+/*Heading Styles*/
+h1 { 
+	background-repeat: no-repeat;
+	background-color: #edc2e9;
+	height: 75px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 3em;
+	text-shadow: 3px 3px 3px #90745D;
+	text-align: center;
+	padding: 10px 0 0 0;
+	margin-bottom: 0;
+}
+
+/*Nav Styles*/
+nav { 
+	padding: 10px 0;
+	text-align: center;
+	background-color: #edc2e9;
+	border-bottom: 2px dotted #000;
+}
+
+nav a {text-decoration: none;}
+nav a:link {color: #000;}
+nav a:visited{color: #cc60c1;}
+nav a:hover {color: #d224ed;}
+
+/*Main Styles*/
+main{
+	background-color: #d8bee6;
+    margin-left: 0px;
+    padding: 1px 20px 20px 20px;   
+	min-height: 300px;
+}
+main img{
+	padding: 20px;
+	float:right;
+}
+
+p{
+	text-align: center;
+	width: 600px;
+}
+
+footer { 
+	background-color: #d8bee6;
+	margin-left: 0px;
+	padding: 20px;
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+}
