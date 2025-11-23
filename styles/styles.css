@@ -1,6 +1,8 @@
 header, nav, main, footer { display: block; } /*sets those html elements as a block*/
 
-body { 
+body {
+	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
+	background-repeat: no-repeat;
 	background-color: #41264F;
 	font-family: Verdana, Arial, sans-serif;
 }
@@ -47,7 +49,7 @@ main{
 }
 main img{
 	padding: 20px;
-	float:right;
+	float: right;
 }
 
 p{
