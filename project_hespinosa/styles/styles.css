@@ -1,0 +1,95 @@
+header, nav, main, footer { display: block; } /*sets those html elements as a block*/
+
+body {
+	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
+	background-color: #41264F;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*ID Styles*/
+#wrapper { 
+	width: 80%;
+	margin: auto;
+	box-shadow: 5px 5px 5px #000000;
+}
+
+/*Heading Styles*/
+h1 { 
+	background-repeat: no-repeat;
+	background-color: #edc2e9;
+	height: 75px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 3em;
+	text-shadow: 3px 3px 3px #90745D;
+	text-align: center;
+	padding: 10px 0 0 0;
+	margin-bottom: 0;
+}
+
+/*Nav Styles*/
+nav { 
+	padding: 10px 0;
+	text-align: center;
+	background-color: #edc2e9;
+	border-bottom: 2px dotted #000;
+}
+
+nav a {text-decoration: none;}
+nav a:link {color: #000;}
+nav a:visited{color: #cc60c1;}
+nav a:hover {color: #d224ed;}
+
+/*Main Styles*/
+main{
+	background-color: #d8bee6;
+    margin-left: 0px;
+    padding: 1px 20px 20px 20px;   
+	min-height: 300px;
+}
+main img{
+	padding: 20px;
+	float: right;
+}
+
+/*Paragraph Styles*/
+p{
+	text-align: center;
+	width: 600px;
+}
+
+p a:link {color: #000;}
+p a:visited{color: #cc60c1;}
+p a:hover {color: #d224ed;}
+
+/*Descriptive List Styles*/
+dl{
+	width: 600px;
+}
+
+dl dt{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
+}
+
+dl dd{
+	padding: 10px;
+}
+
+dd a:link {color: #000;}
+dd a:visited{color: #cc60c1;}
+dd a:hover {color: #d224ed;}
+
+/*Footer Styles*/
+footer { 
+	background-color: #d8bee6;
+	margin-left: 0px;
+	padding: 20px;
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+}
+
+footer a:link {color: #000;}
+footer a:visited{color: #cc60c1;}
+footer a:hover {color: #d224ed;}
