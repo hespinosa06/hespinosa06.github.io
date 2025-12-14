@@ -1,9 +1,9 @@
 header, nav, main, footer { display: block; } /*sets those html elements as a block*/
 
 body {
-	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
 	background-color: #41264F;
 	font-family: Verdana, Arial, sans-serif;
+	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
 }
 
 /*Heading Styles*/
@@ -26,10 +26,7 @@ h2, h4 {
 
 /*Nav Styles*/
 nav {
-	position:sticky;
-	top: 0;
-	padding: 10px 0;
-	text-align: center;
+	padding: 20px 0 0 0;
 	background-color: #edc2e9;
 	border-bottom: 2px dotted #000;
 }
@@ -48,7 +45,8 @@ main{
 }
 main img{
 	padding: 20px;
-	float: right;
+	width: 300px;
+	height: 250px;
 }
 
 /*Paragraph Styles*/
@@ -81,14 +79,22 @@ dl dt{
 }
 
 dl dd{
-	padding: 10px;
+	padding: 10px 0 0 10px;
+	
 }
 
 dd a:link {color: #000;}
 dd a:visited{color: #cc60c1;}
 dd a:hover {color: #d224ed;}
 
-ul {list-style-type: none;}
+/*Unorderd list styles*/
+ul {
+	text-align: center;
+	list-style-type: none;
+	font-size: 1.5em;
+	}
+	
+ul li{padding: 10px 0;}
 
 /*Footer Styles*/
 footer { 
@@ -104,11 +110,38 @@ footer a:link {color: #000;}
 footer a:visited{color: #cc60c1;}
 footer a:hover {color: #d224ed;}
 
+/*Table Styles*/
+table{
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	border: 2px solid #000;
+	background-color: #fff;
+}
+
+table th{
+	border: 2px dotted #000;
+	background-color: #d4b2c1;
+}
+
+/*Form Styles*/
+form fieldset{
+	border: 2px dotted #000;
+	padding: 10px;
+	text-align: left;
+}
+
+form fieldset legend{
+	font-weight: bold;
+	font-size: 1.15em;
+	background-color: #fff;
+	border: 2px solid #000;
+	text-align: center;
+}
+
 /*ID Styles*/
 #wrapper { 
-	width: 80%;
-	margin: auto;
-	box-shadow: 5px 5px 5px #000000;
+	width: 100%;
 }
 
 #image-middle-header {
@@ -116,4 +149,64 @@ footer a:hover {color: #d224ed;}
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
+
+#image-header {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#description{border: 2px solid #d4b2c1;}
+
+/*Media Queries*/
+/*I'm using a mobile first approach since we did that in class*/
+
+/*Medium Screen*/
+@media (min-width: 600px){
+	main img{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+}
+
+/*Big Screen*/
+@media (min-width: 1000px){
+	/*Main Styles*/
+	nav{
+		position:sticky;
+		top: 0;
+		padding: 10px 0;
+		text-align: center;
+		background-color: #edc2e9;
+		border-bottom: 2px dotted #000;
+	}
+	
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	main img{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	table{width: 50%;}
+	/*ID Styles*/
+	#wrapper{
+		width: 80%;
+		margin: auto;
+		box-shadow: 5px 5px 5px #000000;
+	}
+	
+	#image-header {
+		display:block;
+	}
 }
