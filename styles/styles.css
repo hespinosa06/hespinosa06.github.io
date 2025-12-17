@@ -3,7 +3,7 @@ header, nav, main, footer { display: block; } /*sets those html elements as a bl
 body {
 	background-color: #41264F;
 	font-family: Verdana, Arial, sans-serif;
-	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
+	background-image: url(../media/lavender_background.png); /*Background image made by gemini and gpt*/
 }
 
 /*Heading Styles*/
@@ -44,9 +44,21 @@ main{
 	min-height: 300px;
 }
 main img{
-	padding: 20px;
+	padding: 10px;
 	width: 300px;
-	height: 250px;
+	height: 220px;
+}
+
+video{
+	padding: 10px;
+	width: 300px;
+	height: 220px;
+}
+
+video img{
+	padding: 10px;
+	width: 300px;
+	height: 220px;
 }
 
 /*Paragraph Styles*/
@@ -92,6 +104,7 @@ ul {
 	text-align: center;
 	list-style-type: none;
 	font-size: 1.5em;
+	padding: 0;
 	}
 	
 ul li{padding: 10px 0;}
@@ -168,9 +181,32 @@ form fieldset legend{
 	main img{
 		padding: 20px;
 		float: right;
-		width: 525px;
+		width: 500px;
 		height: 300px;
 	}
+	
+	video{
+		padding: 20px;
+		float: right;
+		width: 500px;
+		height: 300px;
+	}
+	
+	video img{
+		padding: 20px;
+		float: right;
+		width: 500px;
+		height: 300px;
+	}
+	
+	nav{
+		top: 0;
+		padding: 5px 0;
+	}
+	
+	ul{padding: 0;}
+	
+	ul li{padding:5px 0;}
 }
 
 /*Big Screen*/
@@ -192,6 +228,20 @@ form fieldset legend{
 	}
 	
 	main img{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	video{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	video img{
 		padding: 20px;
 		float: right;
 		width: 525px;
