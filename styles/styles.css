@@ -1,0 +1,262 @@
+header, nav, main, footer { display: block; } /*sets those html elements as a block*/
+
+body {
+	background-color: #41264F;
+	font-family: Verdana, Arial, sans-serif;
+	background-image: url(../images/lavender_background.png); /*Background image made by gemini and gpt*/
+}
+
+/*Heading Styles*/
+h1 { 
+	background-repeat: no-repeat;
+	background-color: #edc2e9;
+	height: 75px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 3em;
+	text-shadow: 3px 3px 3px #90745D;
+	text-align: center;
+	padding: 10px 0 0 0;
+	margin-bottom: 0;
+}
+
+h2, h4 {
+	text-align: center;
+	padding: 0 0 2px 0;
+}
+
+/*Nav Styles*/
+nav {
+	padding: 20px 0 0 0;
+	background-color: #edc2e9;
+	border-bottom: 2px dotted #000;
+}
+
+nav a {text-decoration: none;}
+nav a:link {color: #000;}
+nav a:visited{color: #cc60c1;}
+nav a:hover {color: #d224ed;}
+
+/*Main Styles*/
+main{
+    margin-left: 0px;
+	background-color: #d8bee6;
+    padding: 1px 20px 20px 20px;   
+	min-height: 300px;
+}
+main img{
+	padding: 10px;
+	width: 300px;
+	height: 220px;
+}
+
+video{
+	padding: 10px;
+	width: 300px;
+	height: 220px;
+}
+
+video img{
+	padding: 10px;
+	width: 300px;
+	height: 220px;
+}
+
+/*Paragraph Styles*/
+p{
+	text-align: center;
+	width: 100%;
+}
+
+p a:link {color: #000;}
+p a:visited{color: #cc60c1;}
+p a:hover {color: #d224ed;}
+
+p img{
+	min-width:300px;
+	max-width:500px;
+	min-height:200px;
+	max-height:400px;
+	padding:35px 35px;
+}
+
+/*Descriptive List Styles*/
+dl{
+	width: 600px;
+}
+
+dl dt{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px;
+}
+
+dl dd{
+	padding: 10px 0 0 10px;
+	
+}
+
+dd a:link {color: #000;}
+dd a:visited{color: #cc60c1;}
+dd a:hover {color: #d224ed;}
+
+/*Unorderd list styles*/
+ul {
+	text-align: center;
+	list-style-type: none;
+	font-size: 1.5em;
+	padding: 0;
+	}
+	
+ul li{padding: 10px 0;}
+
+/*Footer Styles*/
+footer { 
+	background-color: #d8bee6;
+	margin-left: 0px;
+	padding: 20px;
+	text-align: center;
+	font-size: small;
+	font-style: italic;
+}
+
+footer a:link {color: #000;}
+footer a:visited{color: #cc60c1;}
+footer a:hover {color: #d224ed;}
+
+/*Table Styles*/
+table{
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	border: 2px solid #000;
+	background-color: #fff;
+}
+
+table th{
+	border: 2px dotted #000;
+	background-color: #d4b2c1;
+}
+
+/*Form Styles*/
+form fieldset{
+	border: 2px dotted #000;
+	padding: 10px;
+	text-align: left;
+}
+
+form fieldset legend{
+	font-weight: bold;
+	font-size: 1.15em;
+	background-color: #fff;
+	border: 2px solid #000;
+	text-align: center;
+}
+
+/*ID Styles*/
+#wrapper { 
+	width: 100%;
+}
+
+#image-middle-header {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#image-header {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#description{border: 2px solid #d4b2c1;}
+
+/*Media Queries*/
+/*I'm using a mobile first approach since we did that in class*/
+
+/*Medium Screen*/
+@media (min-width: 600px){
+	main img{
+		padding: 20px;
+		float: right;
+		width: 500px;
+		height: 300px;
+	}
+	
+	video{
+		padding: 20px;
+		float: right;
+		width: 500px;
+		height: 300px;
+	}
+	
+	video img{
+		padding: 20px;
+		float: right;
+		width: 500px;
+		height: 300px;
+	}
+	
+	nav{
+		top: 0;
+		padding: 5px 0;
+	}
+	
+	ul{padding: 0;}
+	
+	ul li{padding:5px 0;}
+}
+
+/*Big Screen*/
+@media (min-width: 1000px){
+	/*Main Styles*/
+	nav{
+		position:sticky;
+		top: 0;
+		padding: 10px 0;
+		text-align: center;
+		background-color: #edc2e9;
+		border-bottom: 2px dotted #000;
+	}
+	
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	main img{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	video{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	video img{
+		padding: 20px;
+		float: right;
+		width: 525px;
+		height: 300px;
+	}
+	
+	table{width: 50%;}
+	/*ID Styles*/
+	#wrapper{
+		width: 80%;
+		margin: auto;
+		box-shadow: 5px 5px 5px #000000;
+	}
+	
+	#image-header {
+		display:block;
+	}
+}
