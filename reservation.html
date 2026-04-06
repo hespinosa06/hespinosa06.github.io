@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--Head Section-->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hulber's Bed & Breakfest</title> <!--This changes the title of the tab-->
+		<meta charset="utf-8"> <!--This defines the charecter unicode that the site will use-->
+		<link href="styles/styles.css" rel="stylesheet"> <!--This links the style sheet-->
+		<link rel="icon" type="image/png" href="images/icon.png"> <!--This icon was created by me for a GTA Online crew, very interesting right? You can find it via this link: https://prod.cloud.rockstargames.com/crews/sc/3986/70001500/publish/emblem/emblem_128.png -->
+		<script src="scripts/cost_calculation_script.js" defer></script>
+	</head>
+	<!--Body Section-->
+	<body>
+		<div id="wrapper"> <!--Applies the 'wrapper' format to everything below this, which is basically the whole page-->
+			<!--Header Section-->
+			<header>
+				<h1>Hulber's Bed & Breakfast</h1>
+			</header>
+			<!--Navigation Section-->
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a>&nbsp;</li>
+					<li><a href="lavender_room.html">Cozy Lavender Room</a>&nbsp;</li>
+					<li><a href="space_room.html">Galactic Bedroom</a>&nbsp;</li>
+					<li><a href="weekend.html">Events</a>&nbsp;</li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="reservation.html">Reservations</a></li>
+				</ul>
+			</nav>
+			<!--Main Section-->
+			<main>
+				<h2>Ready to make a reservation?</h2>
+					<p>Fill out this form to either send a reservation or calculate your total amount for staying with us.</p>
+				<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+					<fieldset>
+						<legend>Customer Info</legend>
+							<label>First Name: <input type="text" name="FirstName" id="FirstName" required></label><br>
+							<label>Last Name: <input type="text" name="LastName" id="LastName" required></label><br>
+							<label>Email: <input type="email" name="Email" id="Email" required></label><br>
+							<label>Phone #: <input type="tel" name="Telephone" id="Telephone" required></label>
+					</fieldset><br>
+					<fieldset>
+						<legend>Select A Room & Length of Visit</legend>
+							<label>Lavender Room<input type="radio" id="lavenderRoom" name="RoomSelection"></label>&nbsp;
+							<label>Space Room<input type="radio" id="spaceRoom" name="RoomSelection"></label><br>
+							<label>Start of Visit <input type="date" id="startDate" name="StartDate" required></label>&nbsp;&nbsp;&nbsp;
+							<label>Expected End of Visit <input type="date" id="endDate" name="EndDate" required></label>
+					</fieldset><br>
+					<fieldset>
+						<legend>Select Any Expansions</legend>
+							<label>Valet Parking ($50)<input type="checkbox" id="valetPark" name="ValetParking"></label><br>
+							<label>Fruit Basket ($25)<input type="checkbox" id="fruitBasket" name="FruitBasket"></label><br>
+							<label>Basement Access ($75)<input type="checkbox" id="basementAccess" name="BasementAccess"></label><br>
+							<label>Private Transport ($60)<input type="checkbox" id="privateTrans" name="PrivateTransport"></label>
+					</fieldset><br>
+					<fieldset>
+						<legend>Any Special Requests?</legend>
+							<label>Add it below!<br><textarea name="SpecialRequests" id="SpecialRequests" cols="50" rows="20" placeholder="Your request here..."></textarea></label>
+					</fieldset><br>
+					<fieldset>
+						<legend>Totals</legend>
+							<label id="roomCost"></label><br>
+							<label id="expansionCost"></label><br>
+							<label id="subTotal"></label><br>
+							<label id="tax"></label><br>
+							<label id="total"></label>
+					</fieldset>
+					<br><input type="submit">
+					<input type="reset" id="resetButton">
+					</form>
+			</main>
+			<!--Footer Section-->
+			<footer>
+			Copyright &copy; 2025 <a href="mailto:hjespinosa@amarillocollege.com">Webmaster</a> (base prices don't include tax)<br>This page was last modified: <script>document.write(document.lastModified);</script>
+			</footer>
+		</div>
+	</body>
+</html>
