@@ -124,12 +124,18 @@ footer a:visited{color: #cc60c1;}
 footer a:hover {color: #d224ed;}
 
 /*Table Styles*/
+table, th, td {
+	box-sizing: border-box;
+}
+
 table{
 	width: 75%;
 	margin: auto;
 	text-align: center;
 	border: 2px solid #000;
 	background-color: #fff;
+	table-layout: fixed;
+	border-collapse: collapse;
 }
 
 table th{
@@ -172,6 +178,32 @@ form fieldset legend{
 }
 
 #description{border: 2px solid #d4b2c1;}
+
+.daysOfWeek{
+	font-size: .90em;
+	font-weight: normal;
+	padding: 0px;
+	width: 14.28%;
+}
+
+/*Hiding calandar on small and medium devices*/
+#eventCalandar {
+	display: none;
+}
+
+#eventCalandar td{
+	text-align: center;
+	border: 1px solid #000;
+	padding: 5px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+#eventCalandar h3{
+	text-align: center;
+	font-size: medium;
+	margin: 0;
+}
 
 /*Media Queries*/
 /*I'm using a mobile first approach since we did that in class*/
@@ -248,8 +280,12 @@ form fieldset legend{
 		height: 300px;
 	}
 	
-	table{width: 50%;}
+	table { width: 96%;}
 	/*ID Styles*/
+	#eventCalandar {
+		display: block;
+	}
+
 	#wrapper{
 		width: 80%;
 		margin: auto;
@@ -258,5 +294,12 @@ form fieldset legend{
 	
 	#image-header {
 		display:block;
+	}
+
+	.daysOfWeek{
+	font-size: .90em;
+	font-weight: normal;
+	padding: 0px;
+	width: 14.28%;
 	}
 }
