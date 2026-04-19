@@ -242,7 +242,7 @@ form fieldset legend{
 }
 
 /*Big Screen*/
-@media (min-width: 1000px){
+@media (min-width: 1300px){
 	/*Main Styles*/
 	nav{
 		position:sticky;
