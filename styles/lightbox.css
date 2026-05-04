@@ -1,0 +1,386 @@
+@media (max-width: 599px){
+   div#lightbox {
+      display: none;
+   }
+}
+
+@media (min-width: 600px){
+   h1#lbTitle{
+      background-color: #d8bee6;
+   }
+   div#lightbox {
+      position: relative;
+      width: 400px;
+      height: 160px;
+      margin:50px auto;
+   }
+
+   /* Styles for slideshow title */
+   div#lightbox h1#lbTitle {
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+      margin: 0;
+   }
+
+   /* Styles for the left and right arrows to move through the slideshow */
+   div#lightbox div#lbPrev, div#lightbox div#lbNext {
+      position: absolute;
+      width: 0%;
+      height: 30px;
+      color: #4f4455;
+      font-size: 60px;
+      top: 150px;
+      line-height: 30px;
+      text-align: center;
+      z-index: 1;
+      background: rgba(0,0, 0, 0.0);
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for the left and right arrows */
+   div#lightbox div#lbPrev:hover, div#lightbox div#lbNext:hover {
+      background: rgba(0,0,0,0.5);
+   }
+
+   /* Horizontal position of the left arrow */
+   div#lightbox div#lbPrev {
+      left: -60px;
+   }
+
+   /* Horizontal position of the right arrow */
+   div#lightbox div#lbNext {
+      right: -20px;
+   }
+
+   /* Styles for the box containing slide images */
+   div#lightbox div#lbImages {
+      display: flex;
+      flex-direction: row;     /* Place images within a flexbox on a single row */
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;        /* Hide images which overflow the box border */
+   }
+
+   /* Styles for the box containing the slide counter */
+   div#lightbox div#lbCounter {
+      position: absolute;
+      z-index: 1;
+      width: 70px;
+      height: 26px;
+      line-height: 24px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+      text-align: center;
+      color: white;
+      top: 53px;
+      left: 0px;
+      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+      padding: 3px;
+      user-select: none;
+   }
+
+   /* Styles for the play-pause button */
+   div#lightbox div#lbPlay {
+      position: absolute;
+      top: 40px;
+      left: 350px;
+      text-align: center;
+      font-size: 2.2em;
+      width: 40px;
+      margin: 0 auto;
+      cursor: pointer;
+      user-select: none;
+      filter: grayscale(1);
+   }
+
+   /* Hovering styles for the play-pause button */
+   div#lightbox div#lbPlay:hover {
+      position: absolute;
+      top: 40px;
+      left: 350px;
+      text-align: center;
+      font-size: 2.2em;
+      width: 40px;
+      margin: 0 auto;
+      text-shadow: 3px 3px 20px rgb(27, 24, 202);
+      cursor: pointer;
+      user-select: none;
+      filter: grayscale(0.6) hue-rotate(120deg);
+   }
+
+   /* Styles for images within the slideshow box */
+   div#lbImages img {
+      display: block;
+      width: 230px;
+      height: auto;
+      margin-right: 10px;
+      filter: opacity(0.8);
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for images within the slideshow box */
+   div#lbImages img:hover {
+      filter: opacity(1);
+   }
+
+
+
+   /* ---------------------------------------------------------*/
+   /* Styles for the overlay displaying an image in fullscreen */
+   /* ---------------------------------------------------------*/
+
+   /* Styles for the overlay */
+   div#lbOverlay {
+      display: none;
+   }
+
+   /* Styles for the figure box within the overlay */
+   div#lbOverlay figure {
+      display: block;
+      width: 50%;
+      max-width: 200px;
+   }
+
+   /* Styles for the image within the overlay */
+   div#lbOverlay figure img {
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      box-shadow: 5px 5px 20px black;
+      animation-name: zoom;      /* animate the opening of the figure */
+      animation-duration: 1s;    /* over a 1-second interval */
+   }
+
+   /* Styles for the caption within the overlay */
+   div#lbOverlay figure figcaption {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+      margin-top: 10px;
+      animation-name: zoom;      /* animate the opening of the figure */
+      animation-duration: 1s;    /* over a 1-second interval */  
+   }
+
+   /* Styles for the overlay close button */
+   div#lbOverlay div#lbOverlayClose {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #5e1919;
+      font-size: 60px;
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for the modal window close button */
+   div#lbOverlay div#lbOverlayClose:hover {
+      color: #ffffff;
+   }
+
+   /* Keyframe animation for the opening of the modal window figure and caption */
+   @keyframes zoom {
+   from {transform:scale(0)}
+   to {transform:scale(1)}
+   }
+}
+
+@media (min-width: 1300px){
+   h1#lbTitle{
+      background-color: #d8bee6;
+   }
+   div#lightbox {
+      position: relative;
+      width: 956px;
+      height: 170px;
+      margin:90px auto;
+   }
+
+   /* Styles for slideshow title */
+   div#lightbox h1#lbTitle {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      margin: 0;
+   }
+
+   /* Styles for the left and right arrows to move through the slideshow */
+   div#lightbox div#lbPrev, div#lightbox div#lbNext {
+      position: absolute;
+      width: 0%;
+      height: 30px;
+      color: #4f4455;
+      font-size: 60px;
+      top: 118px;
+      line-height: 30px;
+      text-align: center;
+      z-index: 1;
+      background: rgba(0,0, 0, 0.0);
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for the left and right arrows */
+   div#lightbox div#lbPrev:hover, div#lightbox div#lbNext:hover {
+      background: rgba(0,0,0,0.5);
+   }
+
+   /* Horizontal position of the left arrow */
+   div#lightbox div#lbPrev {
+      left: -60px;
+   }
+
+   /* Horizontal position of the right arrow */
+   div#lightbox div#lbNext {
+      right: -20px;
+   }
+
+   /* Styles for the box containing slide images */
+   div#lightbox div#lbImages {
+      display: flex;
+      flex-direction: row;     /* Place images within a flexbox on a single row */
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;        /* Hide images which overflow the box border */
+   }
+
+   /* Styles for the box containing the slide counter */
+   div#lightbox div#lbCounter {
+      position: absolute;
+      z-index: 1;
+      width: 70px;
+      height: 26px;
+      line-height: 24px;
+      font-size: 20px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 4px;
+      text-align: center;
+      color: white;
+      top: 53px;
+      left: 0px;
+      font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+      padding: 3px;
+      user-select: none;
+   }
+
+   /* Styles for the play-pause button */
+   div#lightbox div#lbPlay {
+      position: absolute;
+      top: 10px;
+      left: 900px;
+      text-align: center;
+      font-size: 2.2em;
+      width: 40px;
+      margin: 0 auto;
+      cursor: pointer;
+      user-select: none;
+      filter: grayscale(1);
+   }
+
+   /* Hovering styles for the play-pause button */
+   div#lightbox div#lbPlay:hover {
+      position: absolute;
+      top: 10px;
+      left: 900px;
+      text-align: center;
+      font-size: 2.2em;
+      width: 40px;
+      margin: 0 auto;
+      text-shadow: 3px 3px 20px rgb(27, 24, 202);
+      cursor: pointer;
+      user-select: none;
+      filter: grayscale(0.6) hue-rotate(120deg);
+   }
+
+   /* Styles for images within the slideshow box */
+   div#lbImages img {
+      display: block;
+      width: 230px;
+      height: auto;
+      margin-right: 10px;
+      filter: opacity(0.8);
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for images within the slideshow box */
+   div#lbImages img:hover {
+      filter: opacity(1);
+   }
+
+
+
+   /* ---------------------------------------------------------*/
+   /* Styles for the overlay displaying an image in fullscreen */
+   /* ---------------------------------------------------------*/
+
+   /* Styles for the overlay */
+   div#lbOverlay {
+      position: fixed;                        /* Overlay is fixed on screen */
+      z-index: 1;                             /* Overlay sits on top of other content */
+      width: 100%;                            /* Full width */
+      height: 100%;                           /* Full height */
+      top: 0;
+      left: 0;
+      background-color: rgba(155, 93, 184, 0.85);  /* Semitransparent brown background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   /* Styles for the figure box within the overlay */
+   div#lbOverlay figure {
+      display: block;
+      width: 80%;
+      max-width: 800px;
+   }
+
+   /* Styles for the image within the overlay */
+   div#lbOverlay figure img {
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: auto;
+      box-shadow: 5px 5px 20px black;
+      animation-name: zoom;      /* animate the opening of the figure */
+      animation-duration: 1s;    /* over a 1-second interval */
+   }
+
+   /* Styles for the caption within the overlay */
+   div#lbOverlay figure figcaption {
+      text-align: center;
+      font-size: 1.25em;
+      color: white;
+      margin-top: 10px;
+      animation-name: zoom;      /* animate the opening of the figure */
+      animation-duration: 1s;    /* over a 1-second interval */  
+   }
+
+   /* Styles for the overlay close button */
+   div#lbOverlay div#lbOverlayClose {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #5e1919;
+      font-size: 60px;
+      cursor: pointer;
+      user-select: none;
+   }
+
+   /* Hovering styles for the modal window close button */
+   div#lbOverlay div#lbOverlayClose:hover {
+      color: #ffffff;
+   }
+
+   /* Keyframe animation for the opening of the modal window figure and caption */
+   @keyframes zoom {
+   from {transform:scale(0)}
+   to {transform:scale(1)}
+   }
+}
