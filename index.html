@@ -8,8 +8,11 @@
 		<link href="styles/styles.css" rel="stylesheet"> <!--This links the style sheet-->
 		<link rel="stylesheet" href="styles/lightbox.css">
 		<link rel="icon" type="image/png" href="images/icon.png"> <!--This icon was created by me for a GTA Online crew, very interesting right? You can find it via this link: https://prod.cloud.rockstargames.com/crews/sc/3986/70001500/publish/emblem/emblem_128.png -->
+		<!--Gallery scripts-->
 		<script src="scripts/lightbox_data.js" defer></script>
 		<script src="scripts/lightbox_creator.js" defer></script>
+		<!--Map scripts and style sheet-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 	</head>
 	<!--Body Section-->
 	<body>
@@ -45,8 +48,14 @@
 					<h2>Our breakfast selection</h2>
 						<p>Occasionally for breakfast, you would have a set choice from different eggs, pancakes, and other breakfast items. Want boiled eggs, or perhaps sunnyside eggs, or maybe an omlet? We have that!</p>
 						<p>All you would need to do is fill out a form, or call our front desk, to put in your breakfast order. If there is something that isn't on our menu you that you would like, feel free to ask our front desk, or <a href="contact.html">contact us</a> ahead of time.</p>
-				<div id="lightbox">
-				</div>
+					<h2>Our location</h2>
+						<p>We are located in a semi-rural spot in Montana. Where the landscape is beautifully only just forests, mountains, and the ocasional lakes. I heard there is a hidden hot spring near by, so maybe go out and do some exploring!</p>
+						<div id="map"></div>
+					
+				<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+				<script src="scripts/mapscript.js"></script>
+				
+				<div id="lightbox"></div>
 			</main>
 			<!--Footer Section-->
 			<footer>
